@@ -1,0 +1,126 @@
+/* Experience Section */
+#experience {
+    padding: 4rem 0;
+    background-color: var(--color-bg);
+    min-height: 100vh;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+  }
+  
+  .experience__container {
+    display: flex;
+    justify-content: center;
+    width: var(--container-width-md); /* Responsive width */
+  }
+  
+  .experience__box {
+    background: var(--color-bg-variant); /* Box background color */
+    color: var(--color-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    width: 100%;
+    max-width: 800px; /* Adjust max-width to make it smaller */
+    text-align: center; /* Center text inside the box */
+    position: relative;
+  }
+  
+  .experience__box::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 5px;
+    background: var(--color-primary);
+    border-radius: 5px;
+  }
+  
+  .experience__box h2 {
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+    font-size: 2.5rem;
+  }
+  
+  .experience__skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+  }
+  
+  .experience__skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+    background: var(--color-bg-variant);
+    border-radius: 8px;
+    padding: 0.5rem;
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+  
+  .experience__skill:hover {
+    background: var(--color-primary-variant);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .experience__skill-icon {
+    font-size: 2rem;
+    transition: color 0.3s;
+  }
+  
+  /* Icon Colors */
+  .html-icon { color: #E44D26; }
+  .css-icon { color: #1572B6; }
+  .tailwind-icon { color: #38B2AC; }
+  .bootstrap-icon { color: #563D7C; }
+  .js-icon { color: #F7E018; }
+  .typescript-icon { color: #007ACC; }
+  .react-icon { color: #61DAFB; }
+  .angular-icon { color: #DD0031; }
+  .node-icon { color: #8CC84B; }
+  .java-icon { color: #F80000; }
+  .python-icon { color: #306998; }
+  .django-icon { color: #092E20; }
+  .mongodb-icon { color: #47A248; }
+  .postgresql-icon { color: #336791; }
+  .prisma-icon { color: #2D3748; }
+  .aws-icon { color: #FF9900; }
+  .docker-icon { color: #2496ED; }
+  .github-icon { color: #181717; }
+  .sql-icon { color: #003B57; }
+  .cloudflare-icon { color: #F7F7F7; }
+  .figma-icon { color: #F24E1E; }
+  .canva-icon { color: #00C4CC; }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 1024px) {
+    .experience__box {
+      padding: 1.5rem;
+      max-width: 90%;
+    }
+  
+    .experience__skills {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .experience__box {
+      padding: 1rem;
+      max-width: 100%;
+    }
+  
+    .experience__skills {
+      grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+  }
+  
+  
+  
+  
+  
+  
